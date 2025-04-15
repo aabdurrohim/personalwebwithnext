@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { FaArrowRight, FaInstagram, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
@@ -6,7 +7,7 @@ import { MapPin } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-[calc(100vh-200px)] items-center justify-center bg-white mt-8">
+    <div className="flex min-h-[calc(100vh-200px)] items-center justify-center bg-white mt-7">
       <div className="max-w-2xl w-full p-8 space-y-8">
         <div className="flex flex-col space-y-6">
           {/* Name with subtle animation */}
@@ -52,6 +53,36 @@ export default function Home() {
             <span className="text-gray-700 group-hover:text-gray-900">Go to my projects</span>
             <FaArrowRight className="text-gray-600 group-hover:text-gray-900 transform group-hover:translate-x-1 transition duration-300" />
           </Link>
+
+          <h2 className="text-center text-xl font-semibold text-gray-700">Tools & Frameworks</h2>
+          {/* Tools/Framework Logos with Running Text Animation */}
+          <div className="relative overflow-hidden py-6">
+            <style jsx>{`
+              @keyframes scroll {
+                0% {
+                  transform: translateX(100%);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+              }
+              .logo-scroller {
+                display: flex;
+                animation: scroll 15s linear infinite;
+                width: max-content;
+              }
+            `}</style>
+            <div className="logo-scroller">
+              <div className="flex space-x-8 mr-8">
+                <img src="/images/react.png" alt="React" className="w-20 h-12" />
+                <img src="/images/nextjs.png" alt="Next.js" className="w-20 h-12" />
+                <img src="/images/laravel.png" alt="Laravel" className="w-20 h-12" />
+                <img src="/images/docker.png" alt="Docker" className="w-15 h-12" />
+                <img src="/images/figma.png" alt="Figma" className="w-20 h-12" />
+                <img src="/images/flask1.png" alt="Flask" className="w-15 h-12" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
