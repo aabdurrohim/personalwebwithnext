@@ -20,9 +20,7 @@ export default function Contact() {
               <CiMail className="text-xl text-gray-600 mt-1" />
               <div>
                 <p className="text-sm text-gray-500">Email</p>
-                <a href="mailto:abdurrohim.i.p@gmail.com" className="text-gray-800 hover:text-gray-600 transition">
-                  abdurrohim.i.p@gmail.com
-                </a>
+                <p className="text-gray-800 hover:text-gray-600 transition">abdurrohim.i.p@gmail.com</p>
               </div>
             </div>
 
