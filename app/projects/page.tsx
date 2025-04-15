@@ -34,7 +34,7 @@ const projects = [
 
 export default function Page() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container max-w-3xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-semibold mb-8 text-center"></h1>
       <div className="space-y-6">
         {projects.map((project) => (

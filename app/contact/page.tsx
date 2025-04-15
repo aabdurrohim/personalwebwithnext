@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { MapPin } from "lucide-react";
 
@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="max-w-3xl w-full p-8">
         <div className="mb-8 text-center">
           <h1 className="text-3xl font-semibold text-gray-800 mb-4">Contact Me</h1>
-          <p className="text-gray-600 max-w-lg mx-auto">Feel free to reach out via email or social media if you have any questions or would like to collaborate.</p>
+          <p className="text-gray-600 max-w-lg mx-auto">Feel free to reach me out via email or social media if you have any questions or would like to collaborate.</p>
         </div>
 
         <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
@@ -46,7 +46,10 @@ export default function Contact() {
                   <FaLinkedin className="text-xl text-gray-700 hover:text-blue-600 transition" />
                 </a>
                 <a href="https://github.com/aabdurrohim" target="_blank" className="bg-white p-2 rounded-full shadow-sm hover:shadow transition" aria-label="Github">
-                  <FaGithub className="text-xl text-gray-700 hover:text-blue-600 transition" />
+                  <FaGithub className="text-xl text-gray-700 hover:text-[#181717] transition" />
+                </a>
+                <a href="https://www.youtube.com/@bDocs" target="_blank" className="bg-white p-2 rounded-full shadow-sm hover:shadow transition" aria-label="Github">
+                  <FaYoutube className="text-xl text-gray-700 hover:text-red-600 transition" />
                 </a>
               </div>
             </div>
@@ -54,7 +57,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-8 text-center text-sm text-gray-500">
-          <p>This website is built by me using Next.js, and all the data inside is dummy data for demonstration purposes only.</p>
+          <p>This website is built by me using Next.js, and some of the data inside is dummy data for demonstration purposes only.</p>
         </div>
       </div>
     </div>

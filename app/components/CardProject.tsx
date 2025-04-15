@@ -15,14 +15,14 @@ interface ProjectProps {
 // Komponen Card Artikel - Full Width Version
 export default function CardProject({ title, excerpt, slug, imageUrl, date, category }: ProjectProps) {
   return (
-    <div className="w-full bg-white border border-gray-200 rou  nded-lg shadow overflow-hidden">
-      <div className="flex flex-col md:flex-row">
+    <div className="w-full h-auto bg-white border border-gray-200 rounded-lg shadow overflow-hidden">
+      <div className="flex flex-col md:flex-row h-full gap-4 p-4">
         {/* Gambar Artikel */}
-        <div className="relative h-64 md:h-auto md:w-1/3 w-full">
+        <div className="relative w-full md:w-1/3 aspect-[4/3] md:aspect-auto md:h-auto h-[200px] border border-gray-300 rounded-lg overflow-hidden">
           {imageUrl ? (
             <Image src={imageUrl} alt={title} fill className="object-cover" />
           ) : (
-            <div className="h-64 md:h-full bg-gray-200 flex items-center justify-center">
+            <div className="h-full bg-gray-200 flex items-center justify-center">
               <span className="text-gray-400">No image</span>
             </div>
           )}
@@ -32,23 +32,25 @@ export default function CardProject({ title, excerpt, slug, imageUrl, date, cate
         </div>
 
         {/* Konten Artikel */}
-        <div className="p-5 md:p-8 md:w-2/3">
-          {/* Tanggal Publikasi */}
-          {date && (
-            <span className="text-xs text-gray-500 mb-2 block">
-              {new Date(date).toLocaleDateString("id-ID", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-          )}
+        <div className="md:w-2/3 flex flex-col justify-between px-1">
+          <div>
+            {/* Tanggal Publikasi */}
+            {date && (
+              <span className="text-xs text-gray-500 mb-2 block">
+                {new Date(date).toLocaleDateString("id-ID", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+            )}
 
-          {/* Judul Artikel */}
-          <h5 className="mb-3 text-2xl font-bold tracking-tight text-gray-900">{title}</h5>
+            {/* Judul Artikel */}
+            <h5 className="mb-3 text-2xl font-bold tracking-tight text-gray-900">{title}</h5>
 
-          {/* Paragraf Singkat */}
-          <p className="mb-4 text-base font-normal text-gray-700 text-justify">{excerpt}</p>
+            {/* Paragraf Singkat */}
+            <p className="mb-4 text-base font-normal text-gray-700 text-justify line-clamp-3">{excerpt}</p>
+          </div>
 
           {/* Tombol Baca Selengkapnya */}
           <Link href={`/projects/${slug}`} className="group inline-flex items-center space-x-2 px-6 py-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition duration-300 w-fit">

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaArrowRight, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaArrowRight, FaInstagram, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { MapPin } from "lucide-react";
 
@@ -24,7 +24,7 @@ export default function Home() {
 
           {/* Introduction text */}
           <div className="prose prose-lg text-gray-700">
-            <p className="leading-relaxed">Halo! 🖐🏻 Anda bisa memanggil saya Abe, dan ini adalah situs pribadi saya. Situs ini akan menampilkan beberapa pengalaman saya di bidang teknologi, terutama pemrograman.</p>
+            <p className="leading-relaxed">Hi! 🖐🏻 You can call me Abe, and this is my personal website. This site will showcase some of my experiences in the technology field, especially programming.</p>
           </div>
 
           {/* Social media links with enhanced hover effects */}
@@ -41,6 +41,9 @@ export default function Home() {
             </Link>
             <Link href="mailto:abdurrohim.i.p@gmail.com" className="group" aria-label="Email">
               <CiMail className="text-3xl text-gray-600 group-hover:text-red-600 transform group-hover:scale-110 transition duration-300" />
+            </Link>
+            <Link href="https://www.youtube.com/@bDocs" target="_blank" className="group" aria-label="YouTube">
+              <FaYoutube className="text-3xl text-gray-600 group-hover:text-red-600 transform group-hover:scale-110 transition duration-300" />
             </Link>
           </div>
 
