@@ -30,6 +30,20 @@ const projects = [
     content2:
       "Fitur utama dari sistem ini adalah peminjaman buku berbasis QR Code, yang mempermudah mahasiswa dalam mengakses buku tanpa perlu interaksi langsung dengan petugas. Setiap buku dalam sistem dilengkapi dengan kode QR yang dapat dipindai oleh mahasiswa menggunakan aplikasi atau scanner yang tersedia di ruang baca. Ketika QR Code dipindai, sistem akan secara otomatis mencatat peminjaman buku berdasarkan identitas mahasiswa yang sudah terautentikasi. Selain itu, sistem juga mencatat batas waktu peminjaman dan memberikan notifikasi jika ada keterlambatan dalam pengembalian buku. Dengan adanya fitur ini, proses peminjaman menjadi lebih cepat, transparan, dan mengurangi kemungkinan kehilangan data peminjaman. Sistem juga memiliki fitur pencatatan statistik peminjaman untuk membantu admin dalam menganalisis tren penggunaan buku dan mengoptimalkan pengelolaan koleksi buku di ruang baca Teknik Komputer.",
   },
+  {
+    id: 3,
+    title: "Web Server Pribadi dengan aaPanel",
+    excerpt: "Membangun dan mengelola web server pribadi berbasis Ubuntu Desktop dengan kontrol panel aaPanel.",
+    category: "Web Server & DevOps",
+    imageUrl: "/images/webserver-aapanel.png",
+    url: "https://www.youtube.com/@bDocs", // ganti dengan IP publik atau domain milikmu jika sudah tersedia
+    date: "2025-04-20",
+    slug: "web-server-aapanel-ubuntu",
+    content1:
+      "Proyek ini bertujuan untuk membangun web server pribadi menggunakan Ubuntu Desktop yang dikelola melalui koneksi SSH dari perangkat Windows. Dengan memanfaatkan aaPanel sebagai kontrol panel berbasis web, saya berhasil mengonfigurasi server, mengatur DNS, dan membuat website pertama yang berjalan di atas LAMP stack. aaPanel dipilih karena kemudahannya dalam mengelola server secara visual dan mendukung berbagai layanan seperti Apache/Nginx, MySQL, PHP, dan FTP. Proses instalasi dan konfigurasi dilakukan sepenuhnya melalui terminal SSH dan panel web aaPanel, menjadikan proyek ini sebagai langkah awal saya dalam mengelola server secara mandiri. Saat ini, web server masih bersifat lokal dan hanya dapat diakses oleh perangkat yang berada dalam satu jaringan yang sama.",
+    content2:
+      "Dalam proyek ini, saya juga belajar mengenai pengaturan firewall, manajemen domain dan subdomain, serta menginstal SSL untuk meningkatkan keamanan. Server ini menjadi fondasi bagi berbagai eksperimen web selanjutnya dan telah digunakan untuk menghosting beberapa proyek web pribadi. Melalui proyek ini, saya memperoleh pengalaman praktis tentang server-side configuration, deployment, dan pengelolaan hosting secara langsung tanpa menggunakan layanan hosting pihak ketiga. Hal ini memberikan saya pemahaman mendalam tentang bagaimana server bekerja serta pentingnya keamanan dan efisiensi dalam pengelolaan web server. Seluruh proses dan hasil proyek ini juga telah saya dokumentasikan dalam bentuk video yang diunggah ke channel YouTube pribadi saya sebagai referensi dan pembelajaran lebih lanjut.",
+  },  
 ];
 
 export default function Page() {
