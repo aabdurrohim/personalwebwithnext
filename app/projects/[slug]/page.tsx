@@ -45,6 +45,20 @@ const projects = [
     content2:
       "Dalam proyek ini, saya juga belajar mengenai pengaturan firewall, manajemen domain dan subdomain, serta menginstal SSL untuk meningkatkan keamanan. Server ini menjadi fondasi bagi berbagai eksperimen web selanjutnya dan telah digunakan untuk menghosting beberapa proyek web pribadi. Melalui proyek ini, saya memperoleh pengalaman praktis tentang server-side configuration, deployment, dan pengelolaan hosting secara langsung tanpa menggunakan layanan hosting pihak ketiga. Hal ini memberikan saya pemahaman mendalam tentang bagaimana server bekerja serta pentingnya keamanan dan efisiensi dalam pengelolaan web server. Seluruh proses dan hasil proyek ini juga telah saya dokumentasikan dalam bentuk video yang diunggah ke channel YouTube pribadi saya sebagai referensi dan pembelajaran lebih lanjut.",
   },
+  {
+    id: 4,
+    title: "Deploy API Gratis di Render dengan Docker",
+    excerpt: "Membangun dan mendistribusikan API service gratis menggunakan Docker container di platform Render.",
+    category: "API & Deployment",
+    imageUrl: "/images/render.png",
+    url: "https://render.com",
+    date: "2025-04-22",
+    slug: "deploy-api-docker-render",
+    content1:
+      "Proyek ini merupakan implementasi dari layanan API sederhana yang dibangun dengan Python dan dideploy secara gratis ke platform Render menggunakan Docker. Untuk dapat melakukan deployment ini, seluruh proyek terlebih dahulu di-*containerize* menggunakan Docker agar dapat dijalankan secara konsisten di berbagai lingkungan. Render memungkinkan saya untuk hanya melakukan pull dari image Docker yang telah dibuat, lalu menjalankannya sebagai web service tanpa perlu konfigurasi server manual. Ini menjadikan proses deploy lebih cepat, praktis, dan efisien.",
+    content2:
+      "Dengan pendekatan containerized deployment ini, saya memperoleh pengalaman langsung dalam mengemas aplikasi ke dalam Docker image, menulis file `Dockerfile`, dan mendorong image tersebut ke Docker Hub. Setelah itu, Render secara otomatis menarik image tersebut dan menjalankannya sebagai service aktif yang dapat diakses publik. Ini sangat cocok untuk keperluan testing API, prototipe aplikasi backend, atau proyek portofolio pribadi. Selain itu, proses ini memberikan pemahaman mendalam tentang pentingnya environment yang konsisten dalam pengembangan perangkat lunak modern.",
+  },
 ];
 
 export default function ProjectDetail({ params }: { params: { slug: string } }) {
