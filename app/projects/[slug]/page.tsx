@@ -36,7 +36,7 @@ const projects = [
     title: "Web Server Pribadi dengan aaPanel",
     excerpt: "Membangun dan mengelola web server pribadi berbasis Ubuntu Desktop dengan kontrol panel aaPanel.",
     category: "Web Server & DevOps",
-    imageUrl: "/images/webserver-aapanel.png",
+    imageUrl: "/images/aapanel.png",
     url: "https://www.youtube.com/@bDocs", // ganti dengan IP publik atau domain milikmu jika sudah tersedia
     date: "2025-04-20",
     slug: "web-server-aapanel-ubuntu",
